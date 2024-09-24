@@ -15,29 +15,34 @@ def draw_boy(x, y):
 
 def run_top():
     print('TOP')
-    for x in range(50,750,10):
-        draw_boy(x, 550)
-    pass
-
-def run_right():
-    print('RIGHT')
-    pass
-
-def run_bottom():
-    print('BOTTOM')
+    for y in range(50,550,10):
+        draw_boy(750, y)
     pass
 
 def run_left():
     print('LEFT')
+    for x in range(750,50,-10):
+        draw_boy(x, 550)
     pass
 
+def run_bottom():
+    print('BOTTOM')
+    for y in range(550,50,-10):
+        draw_boy(50, y)
+    pass
+
+def run_right():
+    print('RIGHT')
+    for x in range(50,750,10):
+        draw_boy(x, 50)
+    pass
 
 def run_rectangle():
     print('RECTANGLE')
     run_top()
-    run_right()
-    run_bottom()
     run_left()
+    run_bottom()
+    run_right()
     pass
 
 
