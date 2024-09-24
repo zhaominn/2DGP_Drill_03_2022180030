@@ -12,12 +12,17 @@ def run_rectangle():
     print('RECTANGLE') 
 
 def run_circle():
-    print('CITCLE')
+    print('CIRCLE')
+
+    clear_canvas_now()
+    boy.draw_now(400,300)
+    delay(1)
+    
 
 while(True):
     run_circle()
     run_rectangle() 
-    
+    break
     
 close_canvas()
 
