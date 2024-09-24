@@ -9,16 +9,15 @@ boy = load_image('character.png')
 hide_lattice()
 
 def run_rectangle():
-    pass
+    print('RECTANGLE') 
 
 def run_circle():
-    pass
+    print('CITCLE')
 
 while(True):
-    run_rectangle() 
     run_circle()
+    run_rectangle() 
+    
     
 close_canvas()
 
-#뼈대를 잡으려면 함수를 써야 한다.(상향식 설계)
-#실행 가능한 아주 짧은 코드(틀)을 먼저 작성한다.
