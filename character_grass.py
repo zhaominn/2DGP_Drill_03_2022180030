@@ -59,12 +59,14 @@ def run_circle():
 
 def run_up_right():
     for d in range(0,350,5):
-        draw_boy(50+d, 50+d)
+        x, y = 50+d, 50+d
+        draw_boy(x, y)
     pass
 
 def run_down_left():
     for d in range(0,350,+5):
-        draw_boy(400+d, 400-d)
+        x, y = 400+d, 400-d
+        draw_boy(x,y)
     pass
 
 def run_triangle():
@@ -76,8 +78,8 @@ def run_triangle():
 
 
 while(True):
-    #run_circle()
-    #run_rectangle()
+    run_circle()
+    run_rectangle()
     run_triangle()
     break
     
